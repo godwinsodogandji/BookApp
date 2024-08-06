@@ -1,5 +1,5 @@
 <header>
-  <a href="#" class="logo"><em>Book-App</em></a>
+  <a href="#" class="logo"><img src="" alt=""></a>
   <nav>
     <ul>
       <li class="active"><a href="#">Accueil</a></li>
@@ -15,77 +15,10 @@
                  <input type="text" placeholder="Entrer le titre du livre" id="title" />
                  <label for="author">Auteur du livre</label>
                  <input type="text" placeholder="Entrer l'auteur du livre" id="author" />
-                 <label for="text">Contenue</label>
-                 <textarea name="text" id="text" rows="10" placeholder="Entrer le Contenue du livre"></textarea>
+                 <label for="statut">Statut</label>
+                 <input type="text" disabled value="En attente" id="statut" />
                  <input type="submit" value="Enregistrer" />
                </form>
 </div>
 
 
-<style>
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(2, 7, 17);
-    color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5rem;
-    padding-inline: 0.5rem;
-  }
-
-  ul {
-    display: flex;
-    justify-content: end;
-    padding: 0.8rem;
-  }
-  li {
-    margin-inline: 1rem;
-    list-style: none;
-  }
-  li:hover {
-    background: #ee8206;
-    padding: 0.5rem;
-    border-radius: 1rem;
-  }
-  li.active {
-    background-color: #ee8206;
-    padding: 0.5rem;
-    border-radius: 1rem;
-  }
-  a{
-               text-decoration: none;
-               color: #fff;
-  }
-  .logo {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
- 
-  form {
-               display:flex;
-               flex-direction: column;
-               justify-content: center;
-               width: 50%;
-               margin: 2rem auto;
-  }
-  input,textarea{
-               display: block;
-               margin-block:1rem ;
-               padding: 1rem;
-               border-radius: 1rem;
-               border: 1px solid;
-  }
-  input[type="submit"]{
-               color: #fff;
-               background:#ee8206;
-               border: none;
-  }
-  input[type="submit"]:hover{
-               color: #fff;
-               background:#8b4e04;
-               border: none;
-  }
-</style>
