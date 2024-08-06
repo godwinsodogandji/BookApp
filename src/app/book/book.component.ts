@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './book.component.css'
 })
 export class BookComponent {
+  getChildInfo!: boolean;
 
+  recupValue(val: boolean):void {
+    this.getChildInfo = val;
+  }
 }

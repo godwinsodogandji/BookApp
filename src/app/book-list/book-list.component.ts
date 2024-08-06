@@ -9,20 +9,26 @@ export class BookListComponent {
 
   books = [
     {
-       id: 1, 
-      title: 'Zéro bug', 
-      author: 'Katy John',
+       id: 1,
+      title: 'Laravel',
+      author: 'Godwin Sdg',
        statut: 'Terminé' },
     {
       id: 2,
-      title: 'Clean Code',
-      author: 'Giovanni Gics',
+      title: 'HTML',
+      author: 'Jean-Claude',
       statut: 'En attente',
     },
     {
       id: 3,
       title: 'Tout sur le Javascript',
-      author: 'Paul Hussier',
+      author: 'Boss Bms',
+      statut: 'Terminé',
+    },
+    {
+      id: 4,
+      title: 'CSS',
+      author: 'Yannick Emerson',
       statut: 'Terminé',
     },
   ];
