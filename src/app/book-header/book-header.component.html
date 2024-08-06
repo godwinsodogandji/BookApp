@@ -1,0 +1,88 @@
+<header>
+  <a href="#" class="logo"><em>Book-App</em></a>
+  <nav>
+    <ul>
+      <li class="active"><a href="#">Accueil</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="card col-sm-12">
+               <form action="" method="">
+                              <h1>Enregistrer un livre</h1>
+                 <label for="title">Titre du livre</label>
+                 <input type="text" placeholder="Entrer le titre du livre" id="title" />
+                 <label for="text">Contenue</label>
+                 <textarea name="text" id="text" cols="50" placeholder="Entrer le Contenue du livre"></textarea>
+                 <input type="submit" value="Enregistrer" />
+               </form>
+</div>
+
+
+<style>
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(2, 7, 17);
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    padding-inline: 0.5rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: end;
+    padding: 0.8rem;
+  }
+  li {
+    margin-inline: 1rem;
+    list-style: none;
+  }
+  li:hover {
+    background: #ee8206;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+  li.active {
+    background-color: #ee8206;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+  a{
+               text-decoration: none;
+               color: #fff;
+  }
+  .logo {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+ 
+  form {
+               display:flex;
+               flex-direction: column;
+               justify-content: center;
+               width: 50%;
+               margin: 2rem auto;
+  }
+  input,textarea{
+               display: block;
+               margin-block:1rem ;
+               padding: 1rem;
+               border-radius: 1rem;
+  }
+  input[type="submit"]{
+               color: #fff;
+               background:#ee8206;
+               border: none;
+  }
+  input[type="submit"]:hover{
+               color: #fff;
+               background:#8b4e04;
+               border: none;
+  }
+</style>
