@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class BookHeaderComponent {
 logo : string ="../assets/logoipsum-317.svg";
 affiche:boolean = false;
-notVisible(){
- this.affiche=true;
-  
+toogleForm(){
+ this.affiche=!this.affiche;
 }
+
 }

@@ -1,7 +1,7 @@
 header {
                display: flex;
                align-items: center;
-               justify-content: space-between;
+               justify-content: space-around;
                background-color: rgb(2, 7, 17);
                color: #fff;
                font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -17,17 +17,12 @@ header {
              li {
                margin-inline: 1rem;
                list-style: none;
-             }
-             li:hover {
-               background: #ee8206;
                padding: 0.5rem;
-               border-radius: 1rem;
              }
+           
              li.active {
-               background-color: #ee8206;
-               padding: 0.5rem;
-               border-radius: 1rem;
-             }
+ border-bottom:2px solid #ee8206;
+               padding: 0.5rem;             }
              a{
                           text-decoration: none;
                           color: #fff;
@@ -72,8 +67,16 @@ header {
               padding: 1rem;
               color: #fff;
               background-color:#ee8206;
-              border-radius: 1rem;
+              /* border-radius: 1rem; */
               border: none;
               font-size: 1rem;
               cursor: pointer;
+                   }
+                   .card {
+                    box-shadow: 1px 1px 9px #333231;
+                    padding: 1rem;
+                    width: 600px;
+                    margin-inline: auto;
+                    margin-block: 2rem;
+                    border-radius: 1rem;
                    }
