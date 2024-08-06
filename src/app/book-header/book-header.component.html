@@ -1,5 +1,5 @@
 <header>
-  <a href="#" class="logo"><img [src]="logo" alt=""></a>
+  <a href="#" class="logo"><img [src]="logo" alt="" /></a>
   <nav>
     <ul>
       <li class="active"><a href="#">Accueil</a></li>
@@ -8,17 +8,19 @@
     </ul>
   </nav>
 </header>
-<div class="card col-sm-12">
-               <form action="" method="">
-                              <h1>Enregistrer un livre</h1>
-                 <label for="title">Titre du livre</label>
-                 <input type="text" placeholder="Entrer le titre du livre" id="title" />
-                 <label for="author">Auteur du livre</label>
-                 <input type="text" placeholder="Entrer l'auteur du livre" id="author" />
-                 <label for="statut">Statut</label>
-                 <input type="text" disabled value="En attente" id="statut" />
-                 <input type="submit" value="Enregistrer" />
-               </form>
+
+<div class="containerbtn">
+  <button class="btn">Enregistrer un livre</button>
 </div>
 
-
+<div class="card col-sm-12" *ngif="affiche">
+  <form action="" method="post">
+    <label for="title">Titre du livre</label>
+    <input type="text" placeholder="Entrer le titre du livre" id="title" />
+    <label for="author">Auteur du livre</label>
+    <input type="text" placeholder="Entrer l'auteur du livre" id="author" />
+    <label for="statut">Statut</label>
+    <input type="text" disabled value="En attente" id="statut" />
+    <input type="submit" value="Enregistrer" />
+  </form>
+</div>
