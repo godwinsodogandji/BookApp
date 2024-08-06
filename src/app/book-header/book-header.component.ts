@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './book-header.component.css'
 })
 export class BookHeaderComponent {
-
+logo : string ="../assets/logoipsum-317.svg";
 }
