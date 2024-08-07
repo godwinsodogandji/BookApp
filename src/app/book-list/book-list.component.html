@@ -7,13 +7,11 @@
     </tr>
   </thead>
   <tbody>
-    @for(book of books; track book.id){
-
-    <tr>
+    <tr *ngFor="let book of books; let i = index">
+      <td>{{ i+1 }}</td>
       <td>{{ book.title }}</td>
       <td>{{ book.author }}</td>
       <td>{{ book.statut }}</td>
     </tr>
-    }
   </tbody>
 </table>

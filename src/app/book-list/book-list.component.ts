@@ -1,35 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Book } from '../interfaces/book';
+import { BooksService } from '../service/books.service';
 
 @Component({
   selector: 'app-book-list',
   templateUrl: './book-list.component.html',
   styleUrl: './book-list.component.css',
 })
-export class BookListComponent {
+export class BookListComponent implements OnInit{
 
-  books = [
-    {
-       id: 1,
-      title: 'Laravel',
-      author: 'Godwin Sdg',
-       statut: 'Terminé' },
-    {
-      id: 2,
-      title: 'HTML',
-      author: 'Jean-Claude',
-      statut: 'En attente',
-    },
-    {
-      id: 3,
-      title: 'Tout sur le Javascript',
-      author: 'Boss Bms',
-      statut: 'Terminé',
-    },
-    {
-      id: 4,
-      title: 'CSS',
-      author: 'Yannick Emerson',
-      statut: 'Terminé',
-    },
-  ];
+  books?:Book [];
+  constructor(private Bookservice:BooksService){}
+  ngOnInit(): void {
+    this.books = this.Bookservice.getBooks()
+  }
+  // books:Book[] = [
+
+  // ];
 }
